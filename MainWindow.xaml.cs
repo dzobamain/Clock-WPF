@@ -24,7 +24,21 @@ namespace Clock
         {
             InitializeComponent();
             DrawClockNumbers();
+            SetAllHandsToInitialPosition();
+            DelayThenStart(1000);
+        }
 
+
+        private void SetAllHandsToInitialPosition()
+        {
+            SetHandAngle(SecondHand, 0, 180);
+            SetHandAngle(MinuteHand, 0, 180);
+            SetHandAngle(HourHand, 0, 180);
+        }
+
+        private async void DelayThenStart(int time)
+        {
+            await Task.Delay(time);
             StartClock();
         }
 
