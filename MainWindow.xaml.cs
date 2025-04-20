@@ -85,9 +85,9 @@ namespace Clock
             double minAngle = now.Minute * 6 + now.Second * 0.1;
             double hourAngle = (now.Hour % 12) * 30 + now.Minute * 0.5;
 
-            SetHandAngle(SecondHand, secAngle, 170);
-            SetHandAngle(MinuteHand, minAngle, 150);
-            SetHandAngle(HourHand, hourAngle, 100);
+            SetHandAngle(SecondHand, secAngle, 180);
+            SetHandAngle(MinuteHand, minAngle, 180);
+            SetHandAngle(HourHand, hourAngle, 180);
         }
 
         private void SetHandAngle(Line hand, double angleDeg, double length)
