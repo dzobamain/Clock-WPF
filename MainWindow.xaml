@@ -28,7 +28,7 @@
             <Canvas x:Name="NumbersCanvas" Width="500" Height="500"/>
 
             <Line x:Name="HourHand" X1="250" Y1="250" X2="250" Y2="150" Stroke="Black" StrokeThickness="6" StrokeEndLineCap="Round"/>
-            <Line x:Name="MinuteHand" X1="250" Y1="250" X2="250" Y2="100" Stroke="Black" StrokeThickness="4" StrokeEndLineCap="Round"/>
+            <Line x:Name="MinuteHand" X1="250" Y1="250" X2="250" Y2="100" Stroke="Black" StrokeThickness="3" StrokeEndLineCap="Round"/>
             <Line x:Name="SecondHand" X1="250" Y1="250" X2="250" Y2="80" Stroke="Red" StrokeThickness="2" StrokeEndLineCap="Round"/>
 
             <Ellipse Width="10" Height="10" Fill="Black" Canvas.Left="245" Canvas.Top="245"/>

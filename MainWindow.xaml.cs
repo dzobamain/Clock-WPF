@@ -31,9 +31,9 @@ namespace Clock
 
         private void SetAllHandsToInitialPosition()
         {
-            SetHandAngle(SecondHand, 0, 180);
+            SetHandAngle(SecondHand, 0, 200);
             SetHandAngle(MinuteHand, 0, 180);
-            SetHandAngle(HourHand, 0, 180);
+            SetHandAngle(HourHand, 0, 120);
         }
 
         private async void DelayThenStart(int time)
@@ -44,7 +44,7 @@ namespace Clock
 
         private void DrawClockNumbers()
         {
-            double radius = 200;
+            double radius = 250;
             double centerX = 250;
             double centerY = 250;
 
@@ -85,9 +85,9 @@ namespace Clock
             double minAngle = now.Minute * 6 + now.Second * 0.1;
             double hourAngle = (now.Hour % 12) * 30 + now.Minute * 0.5;
 
-            SetHandAngle(SecondHand, secAngle, 180);
+            SetHandAngle(SecondHand, secAngle, 200);
             SetHandAngle(MinuteHand, minAngle, 180);
-            SetHandAngle(HourHand, hourAngle, 180);
+            SetHandAngle(HourHand, hourAngle, 120);
         }
 
         private void SetHandAngle(Line hand, double angleDeg, double length)
